@@ -1,3 +1,10 @@
 {
-    "typescripts.tsdk":"node_modules/typescript"
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true
+  },
+  "triggerTaskOnSave.tasks": {
+    "restart backend": ["src/**/*"]
+  },
+  "typescripts.tsdk": "node_modules/typescript/lib"
 }
